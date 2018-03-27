@@ -1,0 +1,18 @@
+#关闭缓存，即时刷新
+spring:
+  thymeleaf:
+    cache: false
+
+#热部署生效
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: static/**,WEB-INF/**
+server:
+  port: 8888
+  context-path: /imooc
+  session:
+    timeout: 60
+  tomcat:
+    uri-encoding: UTF-8
